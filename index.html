@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zainab Sheraz | Full Stack Developer & n8n Solution Builder</title>
+<meta name="description" content="Zainab Sheraz is a full stack developer and n8n solution builder. ERP systems, dashboards, automations and WordPress websites.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b1730'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='%2338e1ff' font-family='Arial' font-weight='700'>ZS</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f3f7ff;--ink:#0b1730;--mut:#55627f;--line:#e0e7f5;--bl:#2f62ff;--cy:#12b8e0;--dk:#0b1730;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.1;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--bl);outline-offset:3px}
+.blob{position:fixed;border-radius:50%;filter:blur(70px);opacity:.5;z-index:0;pointer-events:none;animation:dr 14s ease-in-out infinite}
+.b1{width:420px;height:420px;background:#cfe0ff;top:-100px;right:-80px}.b2{width:340px;height:340px;background:#c9f4ff;bottom:-80px;left:-60px;animation-delay:-6s}
+@keyframes dr{50%{transform:translate(40px,30px)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px max(20px,5vw);background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Bricolage Grotesque';font-weight:800;font-size:1.1rem;cursor:pointer}
+.logo i{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-style:normal;color:#fff;background:linear-gradient(135deg,var(--bl),var(--cy))}
+.links{display:flex;gap:4px}
+.links a{padding:8px 16px;border-radius:99px;color:var(--mut);font-weight:500;cursor:pointer;transition:.2s}
+.links a:hover,.links a.on{background:var(--soft);color:var(--bl)}
+.burger{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font:inherit;cursor:pointer}
+main{position:relative;z-index:1;padding:100px max(20px,5vw) 60px;max-width:1240px;margin:auto;min-height:90vh}
+.page{display:none}.page.on{display:block;animation:in .5s ease}
+@keyframes in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:99px;font-weight:700;border:1.5px solid var(--ink);background:#fff;transition:.25s;cursor:pointer;font:inherit;font-weight:700;color:var(--ink)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(47,98,255,.18)}
+.btn.p{background:var(--bl);border-color:var(--bl);color:#fff}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;min-height:68vh}
+.hi{display:inline-flex;gap:10px;align-items:center;padding:7px 16px;border:1px solid var(--line);border-radius:99px;color:var(--mut);font-size:.92rem;background:#fff}
+.dot{width:9px;height:9px;border-radius:50%;background:#22c55e;animation:pu 2s infinite}
+@keyframes pu{70%{box-shadow:0 0 0 10px transparent}0%{box-shadow:0 0 0 0 #22c55e}}
+.hero h1{font-size:clamp(2.5rem,6vw,4.9rem);margin:22px 0 16px;font-weight:800}
+.grad{background:linear-gradient(100deg,var(--bl),var(--cy) 60%,var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200%;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200%}}
+.type{font-size:1.2rem;color:var(--mut);min-height:2em}.type span{border-right:2px solid var(--bl);color:var(--bl);font-weight:700;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{border-color:transparent}}
+.lead{max-width:540px;color:var(--mut);margin:14px 0 28px;font-size:1.06rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.orb{position:relative;aspect-ratio:1;max-width:400px;margin:auto;width:100%;display:grid;place-items:center}
+.ring{position:absolute;inset:0;border-radius:50%;border:2px dashed var(--bl);opacity:.35;animation:sp 28s linear infinite}.ring.b{inset:9%;border-color:var(--cy);animation-direction:reverse}
+@keyframes sp{to{transform:rotate(360deg)}}
+.core{width:62%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-family:'Bricolage Grotesque';font-weight:800;font-size:4.5rem;color:#fff;background:linear-gradient(135deg,var(--bl),var(--cy));box-shadow:0 30px 70px rgba(47,98,255,.35);animation:fl 6s ease-in-out infinite;overflow:hidden}
+@keyframes fl{50%{transform:translateY(-12px)}}
+.chip{position:absolute;padding:8px 14px;border-radius:12px;background:#fff;border:1px solid var(--line);font-size:.85rem;font-weight:700;box-shadow:0 10px 26px rgba(11,23,48,.1);animation:fl 5s ease-in-out infinite}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.stat{padding:22px;border:1px solid var(--line);border-radius:var(--r);background:var(--soft)}
+.stat b{display:block;font-family:'Bricolage Grotesque';font-size:2.3rem;color:var(--bl)}.stat span{color:var(--mut);font-size:.95rem}
+.sh{margin:46px 0 30px}.sh h2{font-size:clamp(2rem,4.5vw,3.2rem)}.sh p{color:var(--mut);max-width:640px;margin-top:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{padding:26px;border:1px solid var(--line);border-radius:var(--r);background:#fff;box-shadow:0 6px 24px rgba(11,23,48,.05)}
+.box h3{margin-bottom:14px;font-size:1.25rem}.box p{color:var(--mut)}
+.row{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.card{display:block;position:relative;border:1px solid var(--line);border-radius:var(--r);background:#fff;overflow:hidden;transition:transform .3s,box-shadow .3s;box-shadow:0 6px 24px rgba(11,23,48,.05)}
+a.card{cursor:pointer}a.card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(47,98,255,.18);border-color:var(--bl)}
+.cover{height:150px;display:grid;place-items:center;font-size:3rem;position:relative}
+.cover::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(45deg,rgba(255,255,255,.12) 0 2px,transparent 2px 14px)}
+.cb{padding:22px}.cb h3{font-size:1.25rem;margin-bottom:8px}.cb p{color:var(--mut);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}.tags em{font-style:normal;font-size:.78rem;padding:4px 11px;border-radius:99px;background:var(--soft);color:var(--bl);font-weight:700}
+.go{color:var(--bl);font-weight:700;display:inline-flex;gap:6px;transition:gap .25s}a.card:hover .go{gap:12px}.go.n{color:var(--mut);font-weight:500}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.filters button{padding:9px 20px;border-radius:99px;border:1px solid var(--line);background:#fff;color:var(--mut);font:inherit;font-weight:500;cursor:pointer;transition:.2s}
+.filters button.on,.filters button:hover{background:var(--bl);color:#fff;border-color:var(--bl)}
+.card.hide{display:none}
+.vid video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.pills{display:flex;flex-wrap:wrap;gap:9px}.pills span{padding:8px 15px;border-radius:99px;border:1px solid var(--line);background:var(--soft);font-size:.92rem;font-weight:500;transition:.2s}.pills span:hover{background:var(--bl);color:#fff;transform:translateY(-3px)}
+.box ul{list-style:none}.box li{padding:9px 0;border-bottom:1px solid var(--line);color:var(--mut)}.box li:last-child{border:0}.box li b{color:var(--ink)}
+.marq{overflow:hidden;margin:36px 0;padding:16px 0;background:var(--dk);border-radius:var(--r)}
+.marq div{display:flex;gap:44px;width:max-content;animation:mq 32s linear infinite;font-family:'Bricolage Grotesque';font-size:1.4rem;color:#cfe0ff;white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+.dark{background:var(--dk);color:#fff;border-radius:28px;padding:44px;margin-top:10px}
+.dark .sh{margin:0 0 26px}.dark .sh p{color:#a9b8d8}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.cl a{display:flex;gap:16px;align-items:center;padding:18px;border:1px solid #243a68;border-radius:var(--r);background:#13224a;margin-bottom:14px;transition:.25s}
+.cl a:hover{border-color:var(--cy);transform:translateX(8px)}
+.cl b{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--bl),var(--cy));color:#fff}
+.cl small{color:#a9b8d8;display:block}
+form{padding:26px;border-radius:var(--r);background:#fff;color:var(--ink)}
+label{display:block;font-weight:700;margin-bottom:6px}
+input,textarea{width:100%;padding:13px 15px;border-radius:12px;border:1px solid var(--line);background:var(--soft);font:inherit;margin-bottom:16px}
+input:focus,textarea:focus{outline:2px solid var(--bl);background:#fff}
+footer{position:relative;z-index:1;text-align:center;padding:26px;color:var(--mut);border-top:1px solid var(--line);font-size:.92rem}
+@media(max-width:860px){.hero,.about,.ct{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.orb{max-width:290px}.dark{padding:24px}
+.burger{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:12px;border-bottom:1px solid var(--line)}.links.open{display:flex}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div>
+<nav>
+  <a class="logo" data-go="home"><!-- Your logo: replace <i>ZS</i> with <img src="logo.png" alt="Zainab logo" width="38" height="38"> --><i>ZS</i>Zainab Sheraz</a>
+  <button class="burger" id="bg">Menu</button>
+  <div class="links" id="lk"><a data-go="home">Home</a><a data-go="projects">Projects</a><a data-go="websites">WordPress</a><a data-go="skills">Skills</a><a data-go="contact">Contact</a></div>
+</nav>
+<main>
+
+<section class="page" id="home">
+  <div class="hero">
+    <div>
+      <span class="hi"><i class="dot"></i>Available for projects</span>
+      <h1>Full stack developer and <span class="grad">n8n solution builder.</span></h1>
+      <div class="type">I build <span id="tp"></span></div>
+      <p class="lead">I build ERP software, dashboards, AI automations and websites. Based in Rawalpindi, studying Computer Science at UCP.</p>
+      <div class="cta"><button class="btn p" data-go="projects">View projects</button><button class="btn" data-go="contact">Contact me</button></div>
+    </div>
+    <div class="orb" aria-hidden="true"><div class="ring"></div><div class="ring b"></div>
+      <div class="core"><!-- avatar: <img src="avatar.png" alt="" style="width:100%;height:100%;object-fit:cover"> -->ZS</div>
+      <div class="chip" style="top:6%;left:2%">ERP</div><div class="chip" style="top:20%;right:-2%;animation-delay:-2s">n8n</div>
+      <div class="chip" style="bottom:12%;left:-2%;animation-delay:-1s">JavaScript</div><div class="chip" style="bottom:2%;right:8%;animation-delay:-3s">WordPress</div></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>17</b><span>Projects listed</span></div><div class="stat"><b>3</b><span>WordPress sites</span></div>
+    <div class="stat"><b>3</b><span>Automation and AI tools</span></div><div class="stat"><b>500+</b><span>LinkedIn connections</span></div>
+  </div>
+  <div class="sh"><h2>What I do</h2></div>
+  <div class="about">
+    <div class="box"><h3>Full stack development</h3><p>Responsive interfaces in JavaScript, with the logic behind them. ERP modules, login systems, dashboards and business websites.</p></div>
+    <div class="box"><h3>n8n solution building</h3><p>I connect apps, APIs and AI in n8n so repeat work, like capturing leads or summarising meetings, runs without manual effort.</p></div>
+  </div>
+  <div class="marq"><div id="mq"></div></div>
+</section>
+
+<section class="page" id="projects">
+  <div class="sh" style="margin-top:0"><h2>Projects</h2><p>Click any project to open it live.</p></div>
+  <div class="filters" id="ft"><button class="on" data-f="all">All</button><button data-f="erp">ERP and software</button><button data-f="ui">Login pages</button><button data-f="web">Websites</button><button data-f="auto">Automation and AI</button></div>
+  <div class="row" id="pg"></div>
+</section>
+
+<section class="page" id="websites">
+  <div class="sh" style="margin-top:0"><h2>WordPress websites</h2><p>Three WordPress builds, shown as screen recordings of the working sites.</p></div>
+  <div class="row" id="vd"></div>
+</section>
+
+<section class="page" id="skills">
+  <div class="sh" style="margin-top:0"><h2>Skills</h2><p>Frontend and backend development, plus automation with n8n.</p></div>
+  <div class="sk">
+    <div class="box"><h3>Full stack development</h3><ul><li><b>Frontend:</b> HTML, CSS, JavaScript, responsive design</li><li><b>Backend:</b> APIs, forms, data handling</li><li><b>Software:</b> ERP modules, dashboards, login systems</li><li><b>Deploy:</b> Vercel, GitHub Pages</li></ul></div>
+    <div class="box"><h3>n8n and AI</h3><ul><li><b>n8n:</b> workflows, triggers, webhooks</li><li><b>Lead generation:</b> automated prospect pipelines</li><li><b>AI:</b> meeting recorder, summaries, prompts</li><li><b>Integrations:</b> connecting apps through APIs</li></ul></div>
+    <div class="box"><h3>WordPress</h3><ul><li><b>Builder:</b> Elementor</li><li><b>Stores:</b> WooCommerce food ordering</li><li><b>Pages:</b> services, menus, contact, reservations</li><li><b>Setup:</b> themes and plugins</li></ul></div>
+  </div>
+  <div class="sh"><h2>Toolbox</h2></div>
+  <div class="pills" id="pl"></div>
+  <div class="sh"><h2>Education</h2><p>Computer Science, University of Central Punjab (UCP).</p></div>
+</section>
+
+<section class="page" id="contact">
+  <div class="dark">
+    <div class="sh"><h2>Let's work together</h2><p>Need an ERP module, a dashboard, an n8n automation or a website? Send me a message.</p></div>
+    <div class="ct">
+      <div class="cl">
+        <a href="https://www.linkedin.com/in/zainabsheraz/" target="_blank" rel="noopener"><b>in</b><div><small>LinkedIn</small>linkedin.com/in/zainabsheraz</div></a>
+        <a href="mailto:zainabsheraz347@gmail.com"><b>@</b><div><small>Email</small>zainabsheraz347@gmail.com</div></a>
+        <a><b>📍</b><div><small>Location</small>Rawalpindi, Punjab, Pakistan</div></a>
+      </div>
+      <form id="fm"><label for="n">Your name</label><input id="n" required><label for="m">Message</label><textarea id="m" rows="5" required></textarea><button class="btn p" type="submit">Send message</button></form>
+    </div>
+  </div>
+</section>
+</main>
+<footer>Designed and built by Zainab Sheraz</footer>
+
+<script>
+const P=[
+["ATH Dashboard Software","erp","📈","Business software with a full dashboard and a working settings area. Managers get one place for modules, data and account preferences.","https://zainabsheraz.github.io/athdashboard1/#settings","linear-gradient(135deg,#2f62ff,#12b8e0)",["Software","Dashboard","Settings"]],
+["ATH Dashboard Design","erp","📊","The dashboard interface for ATH: sidebar navigation, summary cards and data panels, laid out for quick reading.","https://zainabsheraz.github.io/athdashboarddesign/","linear-gradient(135deg,#1e3a8a,#2f62ff)",["Dashboard","UI"]],
+["ATH Login Page","ui","🔐","Sign-in screen for ATH software with form fields and a clean, branded layout.","https://zainabsheraz.github.io/athlogin/","linear-gradient(135deg,#12b8e0,#2f62ff)",["Login","UI"]],
+["ATH Login Page, Version 2","ui","🛡️","A second login layout for ATH, exploring a different visual direction for the same sign-in flow.","https://zainabsheraz.github.io/ath3/","linear-gradient(135deg,#6d5dfc,#12b8e0)",["Login","Design"]],
+["ERP Dashboard","erp","🧩","ERP dashboard giving an overview of operations, with navigation across business modules.","https://zainabsheraz.github.io/erp5/","linear-gradient(135deg,#7c3aed,#2f62ff)",["ERP","Dashboard"]],
+["ERP Design","erp","🎨","ERP interface design covering the layout, tables and navigation used across modules.","https://zainabsheraz.github.io/erpdesign-/","linear-gradient(135deg,#0ea5e9,#2f62ff)",["ERP","UI"]],
+["ERP Design, Dashboard 2","erp","🗂️","Another ERP dashboard layout, built to compare structure and readability.","https://zainabsheraz.github.io/dashboard2/","linear-gradient(135deg,#0891b2,#22c55e)",["ERP","Layout"]],
+["Dashboard Design","erp","📉","A dashboard design with a modern, data-first interface and responsive panels.","https://zainabsheraz.github.io/dashboard3/","linear-gradient(135deg,#4f46e5,#12b8e0)",["Dashboard","Responsive"]],
+["ERP HR Module","erp","👥","Human resources module of the ERP for managing employee information and people workflows.","https://zainabsheraz.github.io/hr/","linear-gradient(135deg,#059669,#12b8e0)",["ERP","HR"]],
+["ERP Login Page","ui","🔑","Login page for the ERP system, matching the look of the dashboard modules.","https://zainabsheraz.github.io/login3/","linear-gradient(135deg,#2f62ff,#ec4899)",["ERP","Login"]],
+["Vortex Website","web","🌀","A modern business website with bold sections and smooth layout, deployed on Vercel.","https://vortex-website-two.vercel.app/","linear-gradient(135deg,#7c3aed,#12b8e0)",["Website","Vercel"]],
+["VIP Cleaning London","web","🧼","Website for a London cleaning company showing services and a clear way to get in touch.","https://vip-cleaning-london.vercel.app","linear-gradient(135deg,#0ea5e9,#22c55e)",["Website","Vercel"]],
+["Burbank Website Design","web","🏢","A corporate website design with a clear structure for services and company information.","https://zainabsheraz.github.io/demo-/","linear-gradient(135deg,#1e3a8a,#ec4899)",["Website","Design"]],
+["SmileCare Website Design","web","🦷","A dental clinic website design focused on treatments, trust and easy contact.","https://zainabsheraz.github.io/visual-code/","linear-gradient(135deg,#06b6d4,#a5f3fc)",["Website","Healthcare"]],
+["AI Meeting Recorder","auto","🎙️","A tool I built that records meetings and turns them into transcripts, summaries and action items, so nobody has to take notes by hand.","","linear-gradient(135deg,#db2777,#7c3aed)",["AI","Transcription","Summaries"]],
+["Lead Generation System","auto","🎯","An automated system that finds and collects prospects and passes them into follow-up, replacing manual research.","","linear-gradient(135deg,#059669,#22c55e)",["Automation","Leads"]],
+["n8n Workflow Automations","auto","⚙️","n8n workflows that connect apps, APIs and AI so repetitive business tasks run on their own.","","linear-gradient(135deg,#ea580c,#f59e0b)",["n8n","API","Workflows"]]
+];
+const V=[["The BBQ Place","Restaurant website with a hero, menu, about page and reservation button. Built in WordPress.","videos/wordpress-1.mp4","videos/poster-1.jpg"],["Urban Spoon","Online food store with menu categories, cart, account pages and order tracking. Built with WordPress and WooCommerce.","videos/wordpress-2.mp4","videos/poster-2.jpg"],["WordPress Services Site","Developer services website with service sections, stats, contact details and Elementor-edited pages.","videos/wordpress-3.mp4","videos/poster-3.jpg"]];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+$('#pg').innerHTML=P.map(p=>{const inner=`<div class="cover" style="background:${p[5]}">${p[2]}</div><div class="cb"><h3>${p[0]}</h3><p>${p[3]}</p><div class="tags">${p[6].map(t=>`<em>${t}</em>`).join('')}</div>${p[4]?'<span class="go">Open project ↗</span>':'<span class="go n">Demo on request</span>'}</div>`;
+return p[4]?`<a class="card" data-c="${p[1]}" href="${p[4]}" target="_blank" rel="noopener">${inner}</a>`:`<div class="card" data-c="${p[1]}">${inner}</div>`}).join('');
+$('#vd').innerHTML=V.map(v=>`<div class="card vid"><video controls preload="metadata" playsinline poster="${v[3]}"><source src="${v[2]}" type="video/mp4"></video><div class="cb"><h3>${v[0]}</h3><p>${v[1]}</p><div class="tags"><em>WordPress</em></div></div></div>`).join('');
+$('#ft').onclick=e=>{const f=e.target.dataset.f;if(!f)return;$$('#ft button').forEach(b=>b.classList.toggle('on',b===e.target));$$('#pg .card').forEach(c=>c.classList.toggle('hide',f!=='all'&&c.dataset.c!==f))};
+const T=['ERP software and dashboards','n8n automations','AI tools','WordPress websites','full stack apps'];
+const M=['Full Stack Developer','n8n Solution Builder','ERP Dashboards','AI Meeting Recorder','Lead Generation','WordPress','JavaScript'];
+$('#mq').innerHTML=[...M,...M,...M,...M].map(t=>`<span>${t} ✦</span>`).join('');
+$('#pl').innerHTML=['HTML5','CSS3','JavaScript','Responsive design','n8n','REST APIs','WordPress','Elementor','WooCommerce','AI tools','Git','GitHub','Vercel','GitHub Pages','VS Code'].map(t=>`<span>${t}</span>`).join('');
+let ti=0,ci=0,dl=0;(function ty(){const w=T[ti];ci+=dl?-1:1;$('#tp').textContent=w.slice(0,ci);let d=dl?35:70;if(!dl&&ci===w.length){dl=1;d=1400}else if(dl&&ci===0){dl=0;ti=(ti+1)%T.length;d=300}setTimeout(ty,d)})();
+function show(id){if(!$('#'+id))id='home';$$('.page').forEach(p=>p.classList.toggle('on',p.id===id));$$('.links a').forEach(a=>a.classList.toggle('on',a.dataset.go===id));$('#lk').classList.remove('open');scrollTo(0,0);try{history.replaceState(null,'','#'+id)}catch(e){}}
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g){e.preventDefault();show(g.dataset.go)}});
+$('#bg').onclick=()=>$('#lk').classList.toggle('open');
+show((location.hash||'#home').slice(1));
+$('#fm').onsubmit=e=>{e.preventDefault();location.href='mailto:zainabsheraz347@gmail.com?subject='+encodeURIComponent('Portfolio enquiry from '+$('#n').value)+'&body='+encodeURIComponent($('#m').value)};
+</script>
+</body>
+</html>
